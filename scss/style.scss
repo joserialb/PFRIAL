@@ -1,0 +1,28 @@
+@import "../scss/utilidades/variables";
+@import "../scss/base/resetoyaspgral";
+@import "../scss/estructura/header";
+@import "../scss/estructura/main";
+@import "../scss/estructura/footer";
+@import "../scss/estructura/media";
+@import "../scss/base/tipo";
+
+
+
+// Animación de aparición en el contenido principal
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  main {
+    animation: fadeInUp 0.5s ease forwards;
+  }
+  
+
+  

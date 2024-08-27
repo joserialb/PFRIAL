@@ -1,0 +1,26 @@
+header {
+    background-color: $primary-color;
+  
+    .logo {
+      max-width: 100px;
+    }
+  
+    .nav {
+      display: flex;
+      justify-content: flex-end;
+  
+      .nav-link {
+        margin-left: 15px;
+        border-radius: 20px;
+        transition: background-color 0.3s;
+        text-decoration: none;
+        color: $text-color-light;
+        padding: 10px 20px;
+        background-color: transparent;
+  
+        &:hover {
+          background-color: rgba($text-color-light, 0.2);
+        }
+      }
+    }
+  }

@@ -1,0 +1,44 @@
+.servicios-box {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+    color: $text-color-light;
+  
+    img {
+      width: 40%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  
+  .main-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .servicios-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .text-light {
+    color: $text-color-light;
+  }
+  
+  .somos-box img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .somos-box p {
+    color: $text-color-dark;
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  
