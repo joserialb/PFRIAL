@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -31,8 +32,10 @@ main .card {
   border-radius: 0.375rem;
 }
 main .card .card-img-top {
-  border-bottom: 1px solid #dee2e6;
-  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
 main .card .card-body {
   padding: 1.25rem;
@@ -47,20 +50,24 @@ main .card .card-text {
 }
 
 footer {
-  background-color: #343a40;
-  transition: background-color 0.3s ease-in-out;
-  padding: 10px 0;
-  margin-top: 0;
+  background-color: #343a40; /* Color de fondo oscuro */
+  color: #fff; /* Color del texto */
+  padding: 1rem; /* Espaciado interno */
+  position: relative; /* Posición para alinear con el contenido */
+  bottom: 0; /* Posicionar en la parte inferior */
+  width: 100%; /* Ancho completo */
 }
 footer:hover {
-  background-color: #4b545c;
+  background-color: #4b545c; /* Usa el color de fondo del footer */
 }
-footer .footer-icon {
-  width: 40px;
-  height: 40px;
+
+.footer-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
   transition: transform 0.3s ease;
 }
-footer .footer-icon:hover {
+.footer-icon:hover {
   transform: scale(1.1);
 }
 
@@ -90,13 +97,13 @@ footer .footer-icon:hover {
   }
 }
 .servicios-box {
-  width: 100%;
-  margin-bottom: 20px;
+  width: 60%;
+  margin-bottom: 10px;
   text-align: center;
   color: #ffffff;
 }
 .servicios-box img {
-  width: 40%;
+  width: 30%;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -120,7 +127,7 @@ footer .footer-icon:hover {
 }
 
 .somos-box img {
-  width: 50%;
+  width: 30%;
   display: block;
   margin: 0 auto;
 }
@@ -128,8 +135,32 @@ footer .footer-icon:hover {
 .somos-box p {
   color: #020508;
   text-align: center;
-  max-width: 80%;
+  max-width: 50%;
   margin: 0 auto;
+}
+
+/* Asegúrate de que el título esté centrado */
+h1.text-center {
+  text-align: center;
+}
+
+/* Asegúrate de que las imágenes estén centradas en sus columnas */
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.col-md-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Asegúrate de que las imágenes sean fluidas y no se salgan del contenedor */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
 }
 
 @keyframes fadeInUp {

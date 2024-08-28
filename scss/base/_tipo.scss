@@ -1,11 +1,11 @@
 .servicios-box {
-    width: 100%;
-    margin-bottom: 20px;
+    width: 60%;
+    margin-bottom: 10px;
     text-align: center;
     color: $text-color-light;
   
     img {
-      width: 40%;
+      width: 30%;
       height: auto;
       display: block;
       margin: 0 auto;
@@ -30,7 +30,7 @@
   }
   
   .somos-box img {
-    width: 50%;
+    width: 30%;
     display: block;
     margin: 0 auto;
   }
@@ -38,7 +38,30 @@
   .somos-box p {
     color: $text-color-dark;
     text-align: center;
-    max-width: 80%;
+    max-width: 50%;
     margin: 0 auto;
   }
   
+  /* Asegúrate de que el título esté centrado */
+h1.text-center {
+  text-align: center;
+}
+
+/* Asegúrate de que las imágenes estén centradas en sus columnas */
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.col-md-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Asegúrate de que las imágenes sean fluidas y no se salgan del contenedor */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}

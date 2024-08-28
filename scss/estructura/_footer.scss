@@ -1,23 +1,27 @@
 
-
 footer {
-  background-color: $secondary-color;
-  transition: background-color 0.3s ease-in-out;
-  padding: 10px 0;
-  margin-top: 0;
-  
+  background-color: #343a40; /* Color de fondo oscuro */
+  color: #fff; /* Color del texto */
+  padding: 1rem; /* Espaciado interno */
+  position: relative; /* Posición para alinear con el contenido */
+  bottom: 0; /* Posicionar en la parte inferior */
+  width: 100%; /* Ancho completo */
+
   &:hover {
-    background-color: lighten($secondary-color, 10%);
-  }
-
-  .footer-icon {
-    width: 40px;
-    height: 40px;
-    transition: transform 0.3s ease;
-
-    &:hover {
-      transform: scale(1.1);
-    }
+    background-color: lighten(#343a40, 10%); /* Usa el color de fondo del footer */
   }
 }
+
+.footer-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+
 
