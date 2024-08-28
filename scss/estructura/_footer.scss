@@ -3,7 +3,9 @@
 footer {
   background-color: $secondary-color;
   transition: background-color 0.3s ease-in-out;
-
+  padding: 10px 0;
+  margin-top: 0;
+  
   &:hover {
     background-color: lighten($secondary-color, 10%);
   }
