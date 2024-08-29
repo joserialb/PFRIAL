@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 header {
@@ -49,16 +50,42 @@ main .card .card-text {
   color: #343a40;
 }
 
+html, body, footer {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content {
+  flex: 1;
+  margin-bottom: 0;
+  flex-grow: 1;
+}
+
 footer {
-  background-color: #343a40; /* Color de fondo oscuro */
-  color: #fff; /* Color del texto */
-  padding: 1rem; /* Espaciado interno */
-  position: relative; /* Posición para alinear con el contenido */
-  bottom: 0; /* Posicionar en la parte inferior */
-  width: 100%; /* Ancho completo */
+  background-color: #343a40;
+  color: #fff;
+  padding: 1rem;
+  margin-top: auto;
+  width: 100%;
+  transition: background-color 0.3s ease; /* Transición para el color de fondo */
 }
 footer:hover {
-  background-color: #4b545c; /* Usa el color de fondo del footer */
+  background-color: rgb(132, 160, 95); /* Color de fondo al pasar el ratón */
 }
 
 .footer-icon {
@@ -68,7 +95,7 @@ footer:hover {
   transition: transform 0.3s ease;
 }
 .footer-icon:hover {
-  transform: scale(1.1);
+  transform: scale(1.5);
 }
 
 @media (max-width: 768px) {
