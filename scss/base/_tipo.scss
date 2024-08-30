@@ -42,12 +42,12 @@
     margin: 0 auto;
   }
   
-  /* Asegúrate de que el título esté centrado */
+  
 h1.text-center {
   text-align: center;
 }
 
-/* Asegúrate de que las imágenes estén centradas en sus columnas */
+
 .row {
   display: flex;
   justify-content: center;
@@ -58,10 +58,23 @@ h1.text-center {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  font-size: 1.5rem;
 }
 
-/* Asegúrate de que las imágenes sean fluidas y no se salgan del contenedor */
+
 .img-fluid {
   max-width: 100%;
   height: auto;
+}
+
+.container.my-5 .form-label, 
+.container.my-5 .form-control, 
+.container.my-5 .btn {
+    font-size: 1.25rem; 
+     
+}
+
+
+.container.my-5 .btn {
+    font-size: 1.1rem; 
 }
