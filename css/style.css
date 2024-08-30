@@ -7,15 +7,21 @@
 
 header {
   background-color: #dc3545;
+  font-size: 1.8rem;
+  font-family: "Inconsolata", monospace;
 }
-header .logo {
-  max-width: 100px;
+
+.logo {
+  max-width: 200px;
+  opacity: 0.7;
+  border-radius: 9px;
 }
-header .nav {
+
+.nav {
   display: flex;
   justify-content: flex-end;
 }
-header .nav .nav-link {
+.nav .nav-link {
   margin-left: 15px;
   border-radius: 20px;
   transition: background-color 0.3s;
@@ -24,7 +30,7 @@ header .nav .nav-link {
   padding: 10px 20px;
   background-color: transparent;
 }
-header .nav .nav-link:hover {
+.nav .nav-link:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -190,18 +196,55 @@ h1.text-center {
   height: auto;
 }
 
-@keyframes fadeInUp {
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(20px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
   }
 }
-main {
-  animation: fadeInUp 0.5s ease forwards;
+.slide-in {
+  animation: slideIn 0.5s ease-out;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.shake {
+  transition: transform 0.3s ease;
+}
+
+.shake:hover {
+  animation: shake 0.5s ease;
 }
 
 /*# sourceMappingURL=style.css.map */
