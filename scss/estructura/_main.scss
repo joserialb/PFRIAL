@@ -29,9 +29,41 @@ main {
     }
   }
   
-  
+  .position-relative {
+    position: relative;
+}
 
+.position-absolute {
+    position: absolute;
+}
 
- 
- 
+.top-50 {
+    top: calc(50% - 1cm); // Ajusta la posición vertical hacia arriba en 1 cm
+}
 
+.start-50 {
+    left: 50%;
+}
+
+.translate-middle {
+    transform: translate(-50%, -50%);
+}
+
+.bg-light {
+    background-color: rgba(255, 255, 255, 0.8); // Fondo ligeramente transparente
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  top: 50%; // Ajusta a la posición vertical inicial
+  margin-top: -1.5cm; // Mueve el botón hacia arriba en 1 cm
+}
+
+.collapse {
+    margin-top: 10px;
+}
